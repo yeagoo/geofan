@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image" // Added missing Image import for logo
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Mail } from "lucide-react"
