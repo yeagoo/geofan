@@ -2,14 +2,15 @@ import { type NextRequest, NextResponse } from "next/server"
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
-  const pathnameIsMissingLocale = ["/en", "/zh"].every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
-  )
 
-  // 如果路径缺少语言前缀，重定向到适当的语言版本
-  if (pathnameIsMissingLocale) {
+  // 检查路径是否已经有语言前缀
+  const pathnameHasLocale = ["/en", "/zh"].some((locale) => pathname.startsWith(`${locale}/`) || pathname === locale)
+
+  // 如果路径没有语言前缀，重定向到适当的语言版本
+  if (!pathnameHasLocale) {
     const locale = getLocale(request)
-    return NextResponse.redirect(new URL(`/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`, request.url))
+    const newPathname = pathname === "/" ? `/${locale}` : `/${locale}${pathname}`
+    return NextResponse.redirect(new URL(newPathname, request.url))
   }
 }
 
