@@ -1,15 +1,18 @@
 "use client"
 
-import { useRouter } from "next/router"
+import { useRouter, usePathname } from "next/navigation"
 import { type Locale, getTranslation } from "@/lib/i18n"
 
 export function useLocale() {
   const router = useRouter()
-  const locale = (router.locale || "en") as Locale
+  const pathname = usePathname()
+
+  const locale = (pathname.startsWith("/zh") ? "zh" : "en") as Locale
   const t = getTranslation(locale)
 
   const switchLocale = (newLocale: Locale) => {
-    router.push(router.asPath, router.asPath, { locale: newLocale })
+    const currentPath = pathname.replace(/^\/(en|zh)/, "") || "/"
+    router.push(`/${newLocale}${currentPath}`)
   }
 
   return {
