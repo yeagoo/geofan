@@ -322,7 +322,7 @@ class GEOPerformancePredictor:
             <li>日报：关键指标概览</li>
             <li>周报：趋势分析和异常</li>
             <li>月报：深度分析和建议</li>
-            <li>季报：战略回顾和规划</li>
+            <li>季���：战略回顾和规划</li>
           </ul>
 
           <h3>2. 交互式仪表板</h3>

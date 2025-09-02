@@ -341,7 +341,7 @@ export default function ContentOptimizationPage() {
             <div className="mt-8 p-6 bg-muted rounded-lg">
               <h3 className="font-semibold mb-2">开始实践内容优化</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                掌握了内容优化的系统方法后，建议从 AI SEO 的具体技巧开始实践， 将理论转化为可操作的优化策略。
+                掌握了内容优化的系统方法后，建议从 AI SEO 的具体技巧开始实践， 将��论转化为可操作的优化策略。
               </p>
               <Button asChild>
                 <Link href="/ai-seo/content-generation">

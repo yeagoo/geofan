@@ -127,7 +127,6 @@ export function SiteFooter() {
                   最佳实践
                 </Link>
               </li>
-              <li></li>
               <li>
                 <Link
                   href="mailto:mail@geo.fan"

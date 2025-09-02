@@ -110,7 +110,7 @@ export default function ChangelogPage() {
                 </CardTitle>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Calendar className="h-4 w-4" />
-                  2024年1月8日
+                  2025年8月28日
                 </div>
               </div>
             </CardHeader>
@@ -150,7 +150,7 @@ export default function ChangelogPage() {
                 </CardTitle>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Calendar className="h-4 w-4" />
-                  2023年12月20日
+                  2025年8月10日
                 </div>
               </div>
             </CardHeader>
@@ -194,7 +194,7 @@ export default function ChangelogPage() {
                 </CardTitle>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Calendar className="h-4 w-4" />
-                  2023年12月1日
+                  2025年7月31日
                 </div>
               </div>
             </CardHeader>

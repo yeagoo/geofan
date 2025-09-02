@@ -2,10 +2,9 @@
 
 import Link from "next/link"
 import { ThemeToggle } from "./theme-toggle"
-import { Button } from "@/components/ui/button"
-import { Github, Zap } from "lucide-react"
 import { DocsSidebar } from "./docs-sidebar"
 import { DocsToc } from "./docs-toc"
+import Image from "next/image"
 
 export function DocsHeader() {
   return (
@@ -16,7 +15,7 @@ export function DocsHeader() {
         </div>
 
         <Link href="/" className="flex items-center space-x-2 mr-6">
-          <Zap className="h-6 w-6 text-primary" />
+          <Image src="/logo.svg" alt="GEO.Fan Logo" width={24} height={24} className="h-6 w-6" />
           <span className="font-bold">GEO.Fan</span>
         </Link>
 
@@ -58,12 +57,6 @@ export function DocsHeader() {
             <div className="xl:hidden">
               <DocsToc />
             </div>
-            <Button variant="ghost" size="sm" asChild>
-              <Link href="https://github.com/geo-fan" target="_blank" rel="noreferrer">
-                <Github className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-            </Button>
             <ThemeToggle />
           </nav>
         </div>

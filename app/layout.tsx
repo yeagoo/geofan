@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   generator: "v0.app",
   keywords: ["GEO", "生成引擎优化", "AI SEO", "搜索引擎优化", "人工智能"],
   authors: [{ name: "GEO.Fan Team" }],
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
   openGraph: {
     title: "GEO.Fan - 生成引擎优化最佳实践",
     description: "专注于 GEO（生成引擎优化）和 AI SEO 的最佳实践文档平台",
@@ -30,6 +35,9 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/logo.svg" />
+        <link rel="apple-touch-icon" href="/logo.svg" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
