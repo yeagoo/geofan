@@ -10,7 +10,6 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Textarea } from "@/components/ui/textarea"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Search, CheckCircle, AlertTriangle, Loader2, Copy, Plus, Minus, Lightbulb } from "lucide-react"
-import { useLanguage } from "@/contexts/language-context"
 
 interface AnalysisItem {
   item: string
@@ -59,7 +58,6 @@ interface GeoAnalysisResult {
 }
 
 export function GeoCheckerTool() {
-  const { t } = useLanguage()
   const [inputType, setInputType] = useState<"url" | "text">("url")
   const [urlInput, setUrlInput] = useState("")
   const [textInput, setTextInput] = useState("")
@@ -211,18 +209,18 @@ export function GeoCheckerTool() {
     <div className="space-y-6">
       <Card>
         <CardHeader>
-          <CardTitle>{t.tools.contentAnalysis}</CardTitle>
+          <CardTitle>内容分析</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <Tabs value={inputType} onValueChange={(value) => setInputType(value as "url" | "text")}>
             <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="url">{t.tools.urlAnalysis}</TabsTrigger>
-              <TabsTrigger value="text">{t.tools.textAnalysis}</TabsTrigger>
+              <TabsTrigger value="url">URL 分析</TabsTrigger>
+              <TabsTrigger value="text">文本分析</TabsTrigger>
             </TabsList>
 
             <TabsContent value="url" className="space-y-4">
               <div>
-                <label className="block text-sm font-medium mb-2">{t.tools.webPageUrl}</label>
+                <label className="block text-sm font-medium mb-2">网页 URL</label>
                 <Input
                   placeholder="https://example.com/article"
                   value={urlInput}
@@ -233,7 +231,7 @@ export function GeoCheckerTool() {
 
             <TabsContent value="text" className="space-y-4">
               <div>
-                <label className="block text-sm font-medium mb-2">{t.tools.contentText}</label>
+                <label className="block text-sm font-medium mb-2">内容文本</label>
                 <Textarea
                   placeholder="粘贴您要分析的内容..."
                   value={textInput}
@@ -245,7 +243,7 @@ export function GeoCheckerTool() {
           </Tabs>
 
           <div>
-            <label className="block text-sm font-medium mb-2">{t.tools.targetKeywords}</label>
+            <label className="block text-sm font-medium mb-2">目标关键词（可选）</label>
             <Input
               placeholder="例如：GEO优化, 生成引擎优化"
               value={keywords}
@@ -263,12 +261,12 @@ export function GeoCheckerTool() {
             {isAnalyzing ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                {t.tools.analyzing}
+                分析中...
               </>
             ) : (
               <>
                 <Search className="mr-2 h-4 w-4" />
-                开始 GEO {t.tools.analyze}
+                开始 GEO 分析
               </>
             )}
           </Button>
@@ -287,7 +285,7 @@ export function GeoCheckerTool() {
                   </Badge>
                   <Button variant="outline" size="sm" onClick={copyReport}>
                     <Copy className="h-4 w-4 mr-2" />
-                    {t.tools.copyReport}
+                    复制报告
                   </Button>
                 </div>
               </div>
@@ -302,38 +300,38 @@ export function GeoCheckerTool() {
 
               <Card className="mt-6">
                 <CardHeader>
-                  <CardTitle className="text-lg">{t.tools.contentOverview}</CardTitle>
+                  <CardTitle className="text-lg">内容概览</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                     <div>
                       <div className="text-2xl font-bold">{result.meta_info.word_count}</div>
-                      <div className="text-sm text-muted-foreground">{t.tools.wordCount}</div>
+                      <div className="text-sm text-muted-foreground">字数</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold">{result.meta_info.headings_count}</div>
-                      <div className="text-sm text-muted-foreground">{t.tools.headingsCount}</div>
+                      <div className="text-sm text-muted-foreground">标��数量</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold">{result.meta_info.links_count}</div>
-                      <div className="text-sm text-muted-foreground">{t.tools.linksCount}</div>
+                      <div className="text-sm text-muted-foreground">链接数量</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold">{Math.round(result.meta_info.word_count / 200)}</div>
-                      <div className="text-sm text-muted-foreground">{t.tools.estimatedReadingTime}</div>
+                      <div className="text-sm text-muted-foreground">预计阅读时间(分钟)</div>
                     </div>
                   </div>
 
                   {result.meta_info.title && (
                     <div className="mt-4">
-                      <h5 className="text-sm font-medium mb-1">{t.tools.pageTitle}：</h5>
+                      <h5 className="text-sm font-medium mb-1">页面标题：</h5>
                       <p className="text-sm text-muted-foreground">{result.meta_info.title}</p>
                     </div>
                   )}
 
                   {result.meta_info.description && (
                     <div className="mt-3">
-                      <h5 className="text-sm font-medium mb-1">{t.tools.pageDescription}：</h5>
+                      <h5 className="text-sm font-medium mb-1">页面描述：</h5>
                       <p className="text-sm text-muted-foreground">{result.meta_info.description}</p>
                     </div>
                   )}
