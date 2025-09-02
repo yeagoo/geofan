@@ -13,7 +13,7 @@ export function SiteFooter() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 bg-primary rounded flex items-center justify-center">
+                <div className="w-6 h-6 rounded flex items-center justify-center">
                   <Image src="/logo.svg" alt="GEO.Fan Logo" width={24} height={24} className="h-6 w-6" />
                 </div>
                 <span className="font-bold text-lg">GEO.Fan</span>

@@ -417,7 +417,7 @@ export default function StructuredDataPage() {
             <h2 className="text-2xl font-bold mt-8 mb-4">效果监控与优化</h2>
 
             <p className="leading-relaxed">
-              结构化数据的效果需要通过多种方式进行监控和评估。 虽然直接的效果可能不如传统 SEO 指标那样明显，但长期来看，
+              结构化数据的效果需要通过多种方式进行监控和评估。 虽然直接的效果可能不如传统 SEO 指标那���明显，但长期来看，
               良好的结构化数据实施对 GEO 优化具有重要价值。
             </p>
 

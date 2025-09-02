@@ -809,7 +809,7 @@ if __name__ == "__main__":
               <strong>注重集成</strong>：选择能够相互配合的工具组合
             </li>
             <li>
-              <strong>定期评估</strong>：根据需求变化调整工具配置
+              <strong>定期评估</strong>：根据需求变化调整工具��置
             </li>
             <li>
               <strong>团队培训</strong>：确保团队能够有效使用工具
