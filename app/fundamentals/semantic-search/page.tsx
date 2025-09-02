@@ -1,4 +1,5 @@
 import { DocsLayout } from "@/components/docs-layout"
+import { Badge } from "@/components/ui/badge"
 
 export default function SemanticSearchPage() {
   return (
