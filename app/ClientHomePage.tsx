@@ -23,7 +23,7 @@ import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 
-export default function HomePage() {
+export default function ClientHomePage() {
   const { t } = useLanguage()
 
   return (

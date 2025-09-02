@@ -4,9 +4,13 @@ import Link from "next/link"
 import { ThemeToggle } from "./theme-toggle"
 import { DocsSidebar } from "./docs-sidebar"
 import { DocsToc } from "./docs-toc"
+import { LanguageToggle } from "./language-toggle"
 import Image from "next/image"
+import { useLanguage } from "@/contexts/language-context"
 
 export function DocsHeader() {
+  const { t } = useLanguage()
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
       <div className="container mx-auto flex h-14 items-center px-4">
@@ -24,31 +28,31 @@ export function DocsHeader() {
             href="/getting-started/quick-start"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            快速开始
+            {t.nav.quickStart}
           </Link>
           <Link
             href="/fundamentals/how-generative-engines-work"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            基础理论
+            {t.nav.fundamentals}
           </Link>
           <Link
             href="/ai-seo/content-generation"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            AI SEO
+            {t.nav.aiSeo}
           </Link>
           <Link
             href="/tools/geo-checker"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            工具
+            {t.nav.tools}
           </Link>
           <Link
             href="/case-studies/ecommerce"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            案例参考
+            {t.nav.examples}
           </Link>
         </nav>
 
@@ -57,6 +61,7 @@ export function DocsHeader() {
             <div className="xl:hidden">
               <DocsToc />
             </div>
+            <LanguageToggle />
             <ThemeToggle />
           </nav>
         </div>

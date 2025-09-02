@@ -1,10 +1,15 @@
+"use client"
+
 import Link from "next/link"
-import Image from "next/image" // Added missing Image import for logo
+import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Mail } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function SiteFooter() {
+  const { t } = useLanguage()
+
   return (
     <footer className="border-t-2 bg-muted/30 mt-16">
       <div className="max-w-[1600px] mx-auto px-4 py-12">
@@ -16,33 +21,31 @@ export function SiteFooter() {
                 <div className="w-6 h-6 rounded flex items-center justify-center">
                   <Image src="/logo.svg" alt="GEO.Fan Logo" width={24} height={24} className="h-6 w-6" />
                 </div>
-                <span className="font-bold text-lg">GEO.Fan</span>
+                <span className="font-bold text-lg">{t.footer.brand}</span>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground max-w-xs">
-              专注于生成引擎优化（GEO）和 AI SEO 的最佳实践文档平台，助力内容在 AI 时代脱颖而出。
-            </p>
+            <p className="text-sm text-muted-foreground max-w-xs">{t.footer.description}</p>
             <div className="flex space-x-4">
               <Link
                 href="mailto:mail@geo.fan"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                <span className="sr-only">邮箱</span>
+                <span className="sr-only">{t.footer.contact}</span>
               </Link>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-semibold">快速开始</h3>
+            <h3 className="font-semibold">{t.footer.quickLinks}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/getting-started/what-is-geo"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  什么是 GEO
+                  {t.nav.whatIsGeo}
                 </Link>
               </li>
               <li>
@@ -50,7 +53,7 @@ export function SiteFooter() {
                   href="/getting-started/quick-start"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  快速入门指南
+                  {t.nav.quickStartGuide}
                 </Link>
               </li>
               <li>
@@ -58,7 +61,7 @@ export function SiteFooter() {
                   href="/getting-started/core-concepts"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  核心概念
+                  {t.nav.coreConcepts}
                 </Link>
               </li>
               <li>
@@ -66,7 +69,7 @@ export function SiteFooter() {
                   href="/fundamentals/how-generative-engines-work"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  生成引擎原理
+                  {t.nav.fundamentals}
                 </Link>
               </li>
             </ul>
@@ -74,14 +77,14 @@ export function SiteFooter() {
 
           {/* Tools & Resources */}
           <div className="space-y-4">
-            <h3 className="font-semibold">工具与资源</h3>
+            <h3 className="font-semibold">{t.footer.resources}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/tools/geo-checker"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  GEO 检测工具
+                  {t.tools.geoChecker}
                 </Link>
               </li>
               <li>
@@ -89,7 +92,7 @@ export function SiteFooter() {
                   href="/tools/performance-analysis"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  性能分析工具
+                  {t.tools.performanceAnalysis}
                 </Link>
               </li>
               <li>
@@ -97,12 +100,12 @@ export function SiteFooter() {
                   href="/tools/competitor-analysis"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  竞品分析工具
+                  {t.tools.competitorAnalysis}
                 </Link>
               </li>
               <li>
                 <Link href="/tools/resources" className="text-muted-foreground hover:text-foreground transition-colors">
-                  资源中心
+                  {t.footer.resources}
                 </Link>
               </li>
             </ul>
@@ -110,14 +113,14 @@ export function SiteFooter() {
 
           {/* Community & Support */}
           <div className="space-y-4">
-            <h3 className="font-semibold">支持</h3>
+            <h3 className="font-semibold">{t.footer.contact}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/case-studies/ecommerce"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  案例参考
+                  {t.nav.examples}
                 </Link>
               </li>
               <li>
@@ -125,7 +128,7 @@ export function SiteFooter() {
                   href="/best-practices/content-strategy"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  最佳实践
+                  Best Practices
                 </Link>
               </li>
               <li>
@@ -133,7 +136,7 @@ export function SiteFooter() {
                   href="mailto:mail@geo.fan"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  技术支持
+                  {t.footer.contact}
                 </Link>
               </li>
             </ul>
@@ -144,20 +147,20 @@ export function SiteFooter() {
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-            <p>© 2025 GEO.Fan. 保留所有权利。</p>
+            <p>© 2025 GEO.Fan. {t.footer.allRightsReserved}</p>
             <Badge variant="outline" className="text-xs">
               v1.2.0
             </Badge>
           </div>
           <div className="flex items-center space-x-6 text-sm">
             <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">
-              隐私政策
+              {t.footer.privacy}
             </Link>
             <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">
-              使用条款
+              {t.footer.terms}
             </Link>
             <Link href="/changelog" className="text-muted-foreground hover:text-foreground transition-colors">
-              更新日志
+              {t.footer.changelog}
             </Link>
           </div>
         </div>
