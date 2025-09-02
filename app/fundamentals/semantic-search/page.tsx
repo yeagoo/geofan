@@ -5,6 +5,7 @@ export default function SemanticSearchPage() {
     <DocsLayout>
       <div className="max-w-4xl">
         <div className="mb-8">
+          <Badge variant="outline">基础理论</Badge>
           <h1 className="text-4xl font-bold tracking-tight mb-4">语义搜索优化</h1>
           <p className="text-xl text-muted-foreground">
             掌握语义搜索的核心原理，学会创建符合生成引擎理解模式的内容结构。

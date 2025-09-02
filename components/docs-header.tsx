@@ -49,7 +49,7 @@ export function DocsHeader() {
             href="/case-studies/ecommerce"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
-            案例
+            案例参考
           </Link>
         </nav>
 

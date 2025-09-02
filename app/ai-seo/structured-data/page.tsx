@@ -134,10 +134,9 @@ export default function StructuredDataPage() {
 
             <h3 className="text-lg font-semibold mt-6 mb-3">基础语法结构</h3>
 
-            <div className="bg-gray-900 text-gray-100 p-4 rounded-lg my-6">
-              <div className="text-sm font-mono">
-                <div className="text-green-400">// 基础 JSON-LD 结构</div>
-                <pre>{`{
+            <div className="relative group my-6">
+              <pre className="overflow-x-auto bg-gray-900 dark:bg-gray-950 text-gray-100 p-4 rounded-lg text-sm">
+                <code className="language-json">{`{
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "GEO 优化完整指南",
@@ -163,8 +162,8 @@ export default function StructuredDataPage() {
     "@type": "WebPage",
     "@id": "https://geo.fan/guide/geo-optimization"
   }
-}`}</pre>
-              </div>
+}`}</code>
+              </pre>
             </div>
 
             <h3 className="text-lg font-semibold mt-6 mb-3">常用实施模式</h3>
@@ -175,8 +174,9 @@ export default function StructuredDataPage() {
                 <p className="text-sm text-muted-foreground mb-3">
                   为博客文章、新闻报道、技术文档等内容添加结构化标记。
                 </p>
-                <div className="bg-gray-900 text-gray-100 p-4 rounded-lg text-xs overflow-x-auto">
-                  <pre>{`{
+                <div className="relative group">
+                  <pre className="overflow-x-auto bg-gray-900 dark:bg-gray-950 text-gray-100 p-4 rounded-lg text-sm">
+                    <code className="language-json">{`{
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "AI SEO 实践指南",
@@ -208,15 +208,17 @@ export default function StructuredDataPage() {
       "name": "Google Bard"
     }
   ]
-}`}</pre>
+}`}</code>
+                  </pre>
                 </div>
               </div>
 
               <div>
                 <h4 className="font-semibold">教程内容标记</h4>
                 <p className="text-sm text-muted-foreground mb-3">使用 HowTo 类型标记操作指南和教程内容。</p>
-                <div className="bg-gray-900 text-gray-100 p-4 rounded-lg text-xs overflow-x-auto">
-                  <pre>{`{
+                <div className="relative group">
+                  <pre className="overflow-x-auto bg-gray-900 dark:bg-gray-950 text-gray-100 p-4 rounded-lg text-sm">
+                    <code className="language-json">{`{
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "如何实施 GEO 优化",
@@ -241,7 +243,8 @@ export default function StructuredDataPage() {
       "url": "https://geo.fan/guide/strategy"
     }
   ]
-}`}</pre>
+}`}</code>
+                  </pre>
                 </div>
               </div>
             </div>
@@ -261,8 +264,9 @@ export default function StructuredDataPage() {
                 <p className="text-sm text-muted-foreground mb-3">
                   通过 sameAs、relatedTo、mentions 等属性建立实体间的关系网络。
                 </p>
-                <div className="bg-gray-900 text-gray-100 p-4 rounded-lg text-xs overflow-x-auto">
-                  <pre>{`{
+                <div className="relative group">
+                  <pre className="overflow-x-auto bg-gray-900 dark:bg-gray-950 text-gray-100 p-4 rounded-lg text-sm">
+                    <code className="language-json">{`{
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Geoffrey Hinton",
@@ -290,7 +294,8 @@ export default function StructuredDataPage() {
       "sameAs": "https://en.wikipedia.org/wiki/Yann_LeCun"
     }
   ]
-}`}</pre>
+}`}</code>
+                  </pre>
                 </div>
               </div>
 

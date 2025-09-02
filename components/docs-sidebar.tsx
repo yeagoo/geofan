@@ -60,7 +60,7 @@ const navigation: NavItem[] = [
     ],
   },
   {
-    title: "案例研究",
+    title: "案例参考",
     icon: TrendingUp,
     items: [
       { title: "电商网站优化", href: "/case-studies/ecommerce" },

@@ -24,7 +24,7 @@ export default function TermsPage() {
           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Calendar className="h-4 w-4" />
-            <span>最后更新：2024年1月15日</span>
+            <span>最后更新：2025年09月01日</span>
           </div>
         </div>
 
@@ -94,11 +94,11 @@ export default function TermsPage() {
 
               <h3 className="font-semibold mt-6">禁止行为</h3>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>• 上传恶意软件、病毒或其他有害代码</li>
-                <li>• 进行垃圾邮件发送或其他滥用行为</li>
-                <li>• 侵犯他人知识产权或隐私权</li>
-                <li>• 发布违法、有害、威胁性或诽谤性内容</li>
-                <li>• 尝试未经授权访问其他用户账户或系统</li>
+                <li>上传恶意软件、病毒或其他有害代码</li>
+                <li>进行垃圾邮件发送或其他滥用行为</li>
+                <li>侵犯他人知识产权或隐私权</li>
+                <li>发布违法、有害、威胁性或诽谤性内容</li>
+                <li>尝试未经授权访问其他用户账户或系统</li>
               </ul>
             </CardContent>
           </Card>
@@ -119,10 +119,10 @@ export default function TermsPage() {
 
               <h3 className="font-semibold mt-6">用户内容</h3>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>• 您保留对提交内容的所有权</li>
-                <li>• 您授予我们使用您的内容来提供服务的许可</li>
-                <li>• 您确保拥有提交内容的合法权利</li>
-                <li>• 我们不会将您的内容用于服务提供以外的目的</li>
+                <li>您保留对提交内容的所有权</li>
+                <li>您授予我们使用您的内容来提供服务的许可</li>
+                <li>您确保拥有提交内容的合法权利</li>
+                <li>我们不会将您的内容用于服务提供以外的目的</li>
               </ul>
             </CardContent>
           </Card>
@@ -173,11 +173,11 @@ export default function TermsPage() {
               <h3 className="font-semibold">违规行为的后果</h3>
               <p className="text-sm text-muted-foreground">如果您违反这些条款，我们可能会采取以下措施：</p>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>• 发出警告通知</li>
-                <li>• 暂时限制账户功能</li>
-                <li>• 暂停或终止您的账户</li>
-                <li>• 删除违规内容</li>
-                <li>• 采取法律行动（如有必要）</li>
+                <li>发出警告通知</li>
+                <li>暂时限制账户功能</li>
+                <li>暂停或终止您的账户</li>
+                <li>删除违规内容</li>
+                <li>采取法律行动（如有必要）</li>
               </ul>
 
               <h3 className="font-semibold mt-6">申诉程序</h3>
@@ -204,9 +204,9 @@ export default function TermsPage() {
                 我们保留随时修改这些条款的权利。重大修改将通过以下方式通知您：
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>• 在网站上发布通知</li>
-                <li>• 向您的注册邮箱发送通知</li>
-                <li>• 在您下次登录时显示更新提醒</li>
+                <li>在网站上发布通知</li>
+                <li>向您的注册邮箱发送通知</li>
+                <li>在您下次登录时显示更新提醒</li>
               </ul>
 
               <div className="bg-muted/50 p-4 rounded-lg mt-4">
@@ -229,21 +229,15 @@ export default function TermsPage() {
               <div className="space-y-2 text-sm">
                 <p>
                   <strong>邮箱：</strong>{" "}
-                  <a href="mailto:legal@geo.fan" className="text-primary hover:underline">
-                    legal@geo.fan
+                  <a href="mailto:mail@geo.fan" className="text-primary hover:underline">
+                    mail@geo.fan
                   </a>
                 </p>
                 <p>
                   <strong>客服：</strong>{" "}
-                  <a href="mailto:support@geo.fan" className="text-primary hover:underline">
-                    support@geo.fan
+                  <a href="mailto:mail@geo.fan" className="text-primary hover:underline">
+                    mail@geo.fan
                   </a>
-                </p>
-                <p>
-                  <strong>地址：</strong> 中国上海市浦东新区张江高科技园区
-                </p>
-                <p>
-                  <strong>电话：</strong> +86-21-1234-5678
                 </p>
               </div>
 

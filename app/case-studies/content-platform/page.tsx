@@ -11,7 +11,7 @@ export default function ContentPlatformCaseStudyPage() {
           <Badge variant="secondary" className="mb-4">
             案例研究
           </Badge>
-          <h1 className="text-4xl font-bold mb-4 text-balance">内容平台 GEO 优化案例</h1>
+          <h1 className="text-4xl font-bold mb-4 text-balance">CMS 内容平台 GEO 优化案例</h1>
           <p className="text-xl text-muted-foreground text-pretty">
             探索某知识分享平台如何通过 GEO（生成引擎优化）策略，成为 AI 搜索结果的首选内容源
           </p>

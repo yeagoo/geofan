@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Calendar className="h-4 w-4" />
-            <span>最后更新：2024年1月15日</span>
+            <span>最后更新：2025年09月01日</span>
           </div>
         </div>
 
@@ -39,20 +39,15 @@ export default function PrivacyPage() {
             <CardContent className="space-y-4">
               <h3 className="font-semibold">我们收集的信息类型</h3>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>
-                  • <strong>账户信息：</strong>用户名、邮箱地址、密码（加密存储）
+                <li><strong>账户信息：</strong>用户名、邮箱地址、密码（加密存储）
                 </li>
-                <li>
-                  • <strong>使用数据：</strong>访问页面、使用功能、停留时间等行为数据
+                <li><strong>使用数据：</strong>访问页面、使用功能、停留时间等行为数据
                 </li>
-                <li>
-                  • <strong>设备信息：</strong>IP地址、浏览器类型、操作系统、设备标识符
+                <li><strong>设备信息：</strong>IP地址、浏览器类型、操作系统、设备标识符
                 </li>
-                <li>
-                  • <strong>内容数据：</strong>您提交用于GEO检测的网址和文本内容
+                <li><strong>内容数据：</strong>您提交用于GEO检测的网址和文本内容
                 </li>
-                <li>
-                  • <strong>通信记录：</strong>与我们的客服或技术支持的沟通记录
+                <li><strong>通信记录：</strong>与我们的客服或技术支持的沟通记录
                 </li>
               </ul>
 
@@ -75,23 +70,17 @@ export default function PrivacyPage() {
             <CardContent className="space-y-4">
               <h3 className="font-semibold">我们如何使用您的信息</h3>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>
-                  • <strong>服务提供：</strong>为您提供GEO检测、分析和优化建议服务
+                <li><strong>服务提供：</strong>为您提供GEO检测、分析和优化建议服务
                 </li>
-                <li>
-                  • <strong>账户管理：</strong>创建和维护您的用户账户，处理登录验证
+                <li><strong>账户管理：</strong>创建和维护您的用户账户，处理登录验证
                 </li>
-                <li>
-                  • <strong>服务改进：</strong>分析使用模式，优化产品功能和用户体验
+                <li><strong>服务改进：</strong>分析使用模式，优化产品功能和用户体验
                 </li>
-                <li>
-                  • <strong>客户支持：</strong>响应您的询问，提供技术支持和客户服务
+                <li><strong>客户支持：</strong>响应您的询问，提供技术支持和客户服务
                 </li>
-                <li>
-                  • <strong>安全保护：</strong>检测和防范欺诈、滥用和安全威胁
+                <li><strong>安全保护：</strong>检测和防范欺诈、滥用和安全威胁
                 </li>
-                <li>
-                  • <strong>法律合规：</strong>遵守适用的法律法规和监管要求
+                <li><strong>法律合规：</strong>遵守适用的法律法规和监管要求
                 </li>
               </ul>
             </CardContent>
@@ -110,20 +99,15 @@ export default function PrivacyPage() {
                 我们承诺不会向第三方出售、出租或交易您的个人信息。仅在以下情况下可能共享信息：
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>
-                  • <strong>服务提供商：</strong>与可信的第三方服务提供商共享必要信息以提供服务
+                <li><strong>服务提供商：</strong>与可信的第三方服务提供商共享必要信息以提供服务
                 </li>
-                <li>
-                  • <strong>法律要求：</strong>根据法律程序、政府要求或法院命令
+                <li><strong>法律要求：</strong>根据法律程序、政府要求或法院命令
                 </li>
-                <li>
-                  • <strong>业务转让：</strong>在合并、收购或资产转让情况下
+                <li><strong>业务转让：</strong>在合并、收购或资产转让情况下
                 </li>
-                <li>
-                  • <strong>安全保护：</strong>保护我们或他人的权利、财产或安全
+                <li><strong>安全保护：</strong>保护我们或他人的权利、财产或安全
                 </li>
-                <li>
-                  • <strong>用户同意：</strong>获得您明确同意的其他情况
+                <li><strong>用户同意：</strong>获得您明确同意的其他情况
                 </li>
               </ul>
             </CardContent>
@@ -139,20 +123,15 @@ export default function PrivacyPage() {
             <CardContent className="space-y-4">
               <h3 className="font-semibold">安全措施</h3>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>
-                  • <strong>加密传输：</strong>使用SSL/TLS加密保护数据传输
+                <li><strong>加密传输：</strong>使用SSL/TLS加密保护数据传输
                 </li>
-                <li>
-                  • <strong>访问控制：</strong>严格限制员工对个人信息的访问权限
+                <li><strong>访问控制：</strong>严格限制员工对个人信息的访问权限
                 </li>
-                <li>
-                  • <strong>数据备份：</strong>定期备份数据并测试恢复程序
+                <li><strong>数据备份：</strong>定期备份数据并测试恢复程序
                 </li>
-                <li>
-                  • <strong>安全监控：</strong>24/7监控系统安全和异常活动
+                <li><strong>安全监控：</strong>24/7监控系统安全和异常活动
                 </li>
-                <li>
-                  • <strong>定期审计：</strong>定期进行安全评估和漏洞测试
+                <li><strong>定期审计：</strong>定期进行安全评估和漏洞测试
                 </li>
               </ul>
 
@@ -174,31 +153,25 @@ export default function PrivacyPage() {
             <CardContent className="space-y-4">
               <h3 className="font-semibold">您对个人信息的权利</h3>
               <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                <li>
-                  • <strong>访问权：</strong>请求查看我们持有的关于您的个人信息
+                <li><strong>访问权：</strong>请求查看我们持有的关于您的个人信息
                 </li>
-                <li>
-                  • <strong>更正权：</strong>要求更正不准确或不完整的个人信息
+                <li><strong>更正权：</strong>要求更正不准确或不完整的个人信息
                 </li>
-                <li>
-                  • <strong>删除权：</strong>在特定情况下要求删除您的个人信息
+                <li><strong>删除权：</strong>在特定情况下要求删除您的个人信息
                 </li>
-                <li>
-                  • <strong>限制权：</strong>要求限制对您个人信息的处理
+                <li><strong>限制权：</strong>要求限制对您个人信息的处理
                 </li>
-                <li>
-                  • <strong>可携权：</strong>以结构化格式获取您的个人信息
+                <li><strong>可携权：</strong>以结构化格式获取您的个人信息
                 </li>
-                <li>
-                  • <strong>反对权：</strong>反对基于合法利益的信息处理
+                <li><strong>反对权：</strong>反对基于合法利益的信息处理
                 </li>
               </ul>
 
               <div className="bg-muted/50 p-4 rounded-lg mt-4">
                 <p className="text-sm">
                   <strong>如何行使权利：</strong>请发送邮件至
-                  <a href="mailto:privacy@geo.fan" className="text-primary hover:underline ml-1">
-                    privacy@geo.fan
+                  <a href="mailto:mail@geo.fan" className="text-primary hover:underline ml-1">
+                    mail@geo.fan
                   </a>
                   ，我们将在30天内回复您的请求。
                 </p>
@@ -220,15 +193,9 @@ export default function PrivacyPage() {
               <div className="space-y-2 text-sm">
                 <p>
                   <strong>邮箱：</strong>{" "}
-                  <a href="mailto:privacy@geo.fan" className="text-primary hover:underline">
-                    privacy@geo.fan
+                  <a href="mailto:mail@geo.fan" className="text-primary hover:underline">
+                    mail@geo.fan
                   </a>
-                </p>
-                <p>
-                  <strong>地址：</strong> 中国上海市浦东新区张江高科技园区
-                </p>
-                <p>
-                  <strong>电话：</strong> +86-21-1234-5678
                 </p>
               </div>
 

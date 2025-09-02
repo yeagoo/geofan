@@ -11,7 +11,7 @@ export default function EcommerceCaseStudyPage() {
           <Badge variant="secondary" className="mb-4">
             案例研究
           </Badge>
-          <h1 className="text-4xl font-bold mb-4 text-balance">电商平台 GEO 优化案例</h1>
+          <h1 className="text-4xl font-bold mb-4 text-balance">电商独立站 GEO 优化案例</h1>
           <p className="text-xl text-muted-foreground text-pretty">
             深度解析某知名电商平台如何通过 GEO（生成引擎优化）策略，在 6 个月内实现搜索流量增长 300%
           </p>
@@ -55,6 +55,7 @@ export default function EcommerceCaseStudyPage() {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">解决方案</h2>
+            <p className="mb-4">为了便于理解使用 iPhone 作为产品的例子</p>
             <div className="space-y-6">
               <Card>
                 <CardHeader>
@@ -65,11 +66,11 @@ export default function EcommerceCaseStudyPage() {
                   <div className="bg-muted p-4 rounded-lg">
                     <h4 className="font-semibold mb-2">优化前：</h4>
                     <p className="text-sm text-muted-foreground mb-4">
-                      "iPhone 15 Pro 手机 苹果 智能手机 5G 拍照 游戏 办公"
+                      "iPhone 17 Pro 手机 苹果 智能手机 5G 拍照 游戏 办公"
                     </p>
                     <h4 className="font-semibold mb-2">优化后：</h4>
                     <p className="text-sm">
-                      "iPhone 15 Pro 是苹果公司推出的旗舰智能手机，搭载 A17 Pro 芯片，支持专业级摄影和 4K 视频录制。
+                      "iPhone 17 Pro 是苹果公司推出的旗舰智能手机，搭载 A19 Pro 芯片，支持专业级摄影和 4K 视频录制。
                       适合摄影爱好者、商务人士和游戏玩家，提供卓越的性能体验和全天候电池续航。"
                     </p>
                   </div>
@@ -87,7 +88,7 @@ export default function EcommerceCaseStudyPage() {
                       {`{
   "@context": "https://schema.org/",
   "@type": "Product",
-  "name": "iPhone 15 Pro",
+  "name": "iPhone 17 Pro",
   "description": "专业级智能手机，适合摄影和商务",
   "brand": {
     "@type": "Brand",
@@ -123,7 +124,7 @@ export default function EcommerceCaseStudyPage() {
                     </div>
                     <div className="p-4 border rounded-lg">
                       <h4 className="font-semibold mb-2">优化内容</h4>
-                      <p className="text-sm">"iPhone 15 Pro 配备三摄系统，支持 5x 光学变焦，夜景模式下表现出色..."</p>
+                      <p className="text-sm">"iPhone 17 Pro 配备三摄系统，支持 5x 光学变焦，夜景模式下表现出色..."</p>
                     </div>
                   </div>
                 </CardContent>

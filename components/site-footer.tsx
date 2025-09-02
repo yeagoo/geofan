@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Github, Twitter, Mail, ExternalLink } from "lucide-react"
+import { Mail } from "lucide-react"
 
 export function SiteFooter() {
   return (
@@ -22,19 +22,8 @@ export function SiteFooter() {
               专注于生成引擎优化（GEO）和 AI SEO 的最佳实践文档平台，助力内容在 AI 时代脱颖而出。
             </p>
             <div className="flex space-x-4">
-              <Link href="https://github.com" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Link>
               <Link
-                href="https://twitter.com"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="mailto:contact@geo.fan"
+                href="mailto:mail@geo.fan"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="h-5 w-5" />
@@ -120,14 +109,14 @@ export function SiteFooter() {
 
           {/* Community & Support */}
           <div className="space-y-4">
-            <h3 className="font-semibold">社区与支持</h3>
+            <h3 className="font-semibold">支持</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/case-studies/ecommerce"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  成功案例
+                  案例参考
                 </Link>
               </li>
               <li>
@@ -138,18 +127,10 @@ export function SiteFooter() {
                   最佳实践
                 </Link>
               </li>
+              <li></li>
               <li>
                 <Link
-                  href="https://github.com/geo-fan/discussions"
-                  className="text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1"
-                >
-                  社区讨论
-                  <ExternalLink className="h-3 w-3" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="mailto:support@geo.fan"
+                  href="mailto:mail@geo.fan"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   技术支持
@@ -163,9 +144,9 @@ export function SiteFooter() {
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-            <p>© 2024 GEO.Fan. 保留所有权利。</p>
+            <p>© 2025 GEO.Fan. 保留所有权利。</p>
             <Badge variant="outline" className="text-xs">
-              v1.0.0
+              v1.2.0
             </Badge>
           </div>
           <div className="flex items-center space-x-6 text-sm">
