@@ -1,0 +1,140 @@
+import { NextResponse } from "next/server"
+
+// 模拟资源数据
+const mockResources = [
+  {
+    id: "1",
+    title: "GEO 内容检测器",
+    description: "智能分析网页内容的GEO优化程度，提供详细的改进建议",
+    category: "tools",
+    type: "tool" as const,
+    url: "/tools/geo-checker",
+    rating: 4.8,
+    downloads: 1250,
+    tags: ["内容分析", "SEO检测", "自动化"],
+    featured: true,
+  },
+  {
+    id: "2",
+    title: "Schema.org 模板生成器",
+    description: "快速生成标准的结构化数据标记，支持多种Schema类型",
+    category: "tools",
+    type: "tool" as const,
+    url: "/tools/schema-generator",
+    rating: 4.6,
+    downloads: 890,
+    tags: ["结构化数据", "Schema", "JSON-LD"],
+    featured: true,
+  },
+  {
+    id: "3",
+    title: "文章内容模板",
+    description: "针对博客文章和新闻内容的GEO优化模板",
+    category: "templates",
+    type: "template" as const,
+    downloadUrl: "/downloads/article-template.zip",
+    rating: 4.7,
+    downloads: 2100,
+    tags: ["文章模板", "内容优化", "JSON-LD"],
+    featured: false,
+  },
+  {
+    id: "4",
+    title: "产品页面模板",
+    description: "电商产品页面的完整GEO优化模板，包含价格、评价等结构化数据",
+    category: "templates",
+    type: "template" as const,
+    downloadUrl: "/downloads/product-template.zip",
+    rating: 4.9,
+    downloads: 1680,
+    tags: ["电商", "产品页面", "结构化数据"],
+    featured: true,
+  },
+  {
+    id: "5",
+    title: "GEO 优化完整指南",
+    description: "从基础到高级的GEO优化实践指南，包含案例分析",
+    category: "guides",
+    type: "guide" as const,
+    url: "/getting-started/quick-start",
+    downloadUrl: "/downloads/geo-guide.pdf",
+    rating: 4.8,
+    downloads: 3200,
+    tags: ["入门指南", "最佳实践", "案例分析"],
+    featured: false,
+  },
+  {
+    id: "6",
+    title: "FAQ 页面模板",
+    description: "结构化的问答页面模板，提升AI搜索匹配度",
+    category: "templates",
+    type: "template" as const,
+    downloadUrl: "/downloads/faq-template.zip",
+    rating: 4.5,
+    downloads: 950,
+    tags: ["FAQ", "问答", "结构化"],
+    featured: false,
+  },
+  {
+    id: "7",
+    title: "Google 结构化数据测试工具",
+    description: "Google官方提供的结构化数据验证工具",
+    category: "external",
+    type: "external" as const,
+    url: "https://search.google.com/test/rich-results",
+    rating: 4.9,
+    downloads: 0,
+    tags: ["Google", "验证工具", "结构化数据"],
+    featured: false,
+  },
+  {
+    id: "8",
+    title: "本地商业模板",
+    description: "餐厅、零售店等本地商业的GEO优化模板",
+    category: "templates",
+    type: "template" as const,
+    downloadUrl: "/downloads/local-business-template.zip",
+    rating: 4.6,
+    downloads: 720,
+    tags: ["本地商业", "地理位置", "LocalBusiness"],
+    featured: false,
+  },
+  {
+    id: "9",
+    title: "AI 内容优化工具",
+    description: "使用AI技术优化内容的语义结构和可读性",
+    category: "tools",
+    type: "tool" as const,
+    url: "/tools/ai-content-optimizer",
+    rating: 4.7,
+    downloads: 1450,
+    tags: ["AI优化", "语义分析", "内容质量"],
+    featured: false,
+  },
+  {
+    id: "10",
+    title: "技术实施检查清单",
+    description: "GEO优化技术实施的完整检查清单和验证步骤",
+    category: "guides",
+    type: "guide" as const,
+    downloadUrl: "/downloads/implementation-checklist.pdf",
+    rating: 4.8,
+    downloads: 1890,
+    tags: ["检查清单", "技术实施", "验证"],
+    featured: false,
+  },
+]
+
+export async function GET() {
+  try {
+    // 模拟API延迟
+    await new Promise((resolve) => setTimeout(resolve, 500))
+
+    return NextResponse.json({
+      success: true,
+      resources: mockResources,
+    })
+  } catch (error) {
+    return NextResponse.json({ success: false, error: "Failed to fetch resources" }, { status: 500 })
+  }
+}
